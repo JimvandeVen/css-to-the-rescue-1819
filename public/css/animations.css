@@ -1,0 +1,23 @@
+@keyframes cheese--rotate--left {
+  0%   {transform: rotate(0)}
+  25%   {transform: rotate(1deg)}
+  50%   {transform: rotate(0)}
+  75%   {transform: rotate(-1deg)}
+  100%   {transform: rotate(0)}
+}
+
+@keyframes cheese--rotate--right {
+  0%   {transform: rotate(0)}
+  25%   {transform: rotate(-1deg)}
+  50%   {transform: rotate(0)}
+  75%   {transform: rotate(1deg)}
+  100%   {transform: rotate(0)}
+}
+
+.svg__polygon--rotateLeft, .sandwichSection__article--rotateLeft{
+  animation: cheese--rotate--left .4s ease infinite;
+}
+
+.svg__polygon--rotateRight, .sandwichSection__article--rotateRight{
+  animation: cheese--rotate--right .4s ease infinite;
+}
