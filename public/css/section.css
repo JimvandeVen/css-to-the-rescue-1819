@@ -33,3 +33,12 @@
 .sandwichSection__article{
   width: 15vw;
 }
+
+.article__text{
+    opacity: 0;
+    transition: opacity .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.article__title:hover~.article__text{
+  opacity: 1;
+}

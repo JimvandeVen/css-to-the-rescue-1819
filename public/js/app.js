@@ -20,15 +20,23 @@ for (var i = 0; i < 100; i++) {
   yolkContainer.appendChild(border)
 }
 
-// const egg = document.querySelector(".egg");
-//
-// egg.addEventListener("click", eggYolk)
-//
-// function eggYolk(){
-//   const yolk = document.querySelector(".yolk")
-//   yolk.classList.toggle("yolk--hidden")
-//   egg.classList.toggle("egg--spinning")
-// }
+const articles = document.querySelectorAll(".sandwichSection__article")
+const polygons = document.querySelectorAll(".svg__polygon")
+
+articles.forEach(article=>{
+  article.addEventListener("mouseenter", renderKip);
+  article.addEventListener("mouseout", renderKip);
+})
+
+
+function renderKip(){
+  console.log(event);
+  polygons.forEach(polygon =>{
+    polygon.style.display = polygon.style.display === 'none' ? '' : 'none';
+  })
+
+
+}
 // css checkbox hack
 // target selector
 // top:50vh;
